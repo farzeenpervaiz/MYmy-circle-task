@@ -1,0 +1,236 @@
+/* write your styles here */
+*{
+    background-image: url("images/floral.png"); 
+    background-repeat: no-repeat;
+}
+marquee {
+    background-color: #ed484c;
+    font-size: 1.5em;
+    padding: 10px;
+    color: white;
+}
+marquee mark {
+    margin: 0 5px;
+    padding: 0 5px;
+}
+nav {
+    display: flex;
+    background: #4c4c4c;
+    height: 50px;
+    justify-content: center;
+   
+    
+}
+img.logo {
+    height: 100%;
+    margin-left: 3%;
+}
+nav ul {
+    
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    font-size: 1.5em;
+    
+}
+nav a {
+    text-decoration: none;
+    color: #b0b0b0;
+}
+section#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f18d97;
+    min-height: 40vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 50px
+}
+ p {
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    padding: 25px 50;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    
+}
+
+
+section#intro button {
+    padding: 10px 50px;
+    border: none;
+    background-color: #160d0e;
+    color: indianred;
+    font-size: 1.5em;
+
+}
+section#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #efece7;
+    
+
+
+}
+section#services > div {
+    display: flex;
+}
+section#services i {
+    width: 100px;
+
+}
+section#services .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+} 
+.service:hover i{
+    color: #ed484c;
+}
+section#portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: #ddceb4;
+    margin-bottom: 0;
+
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.projects .project {
+    width: 20%;
+    
+    position: relative;
+    
+    
+}
+.project figcaption {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    background-color: black;
+    color: white;   
+    width: 250px;
+    border-radius: 10px;
+}
+.project:hover figcaption {
+    display: flex;
+}
+
+
+
+.projects img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.far {
+    color: white;
+}
+
+ .icons i {
+    margin: 10px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 100%;
+}
+section#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #AFC7C6;
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+    
+
+}
+#contact i {
+    padding: 20px;
+    font-size: 3em;
+    color: #212121;
+
+}
+#contact i:hover {
+    background-color: #212121;
+    color: #FCDEA6;
+}
+
+#contact .icons {
+    margin-top: 40px;
+}
+footer {
+    background-color: #212121;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+footer p, footer i {
+    border: none;
+    padding: 0;
+}
+footer .fas {
+    padding: 0;
+    margin: 0 5px;
+}
+footer:hover i {
+    color: red;
+}
+h2  {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 2em;  
+}
+@media (max-width: 768px) {
+    section#services > div {
+        flex-direction: column;
+    }
+    .projects .project {
+        width: 30%;
+    }
+}
+@media (max-width: 500px) {
+    .projects .project {
+        width: 50%;
+    }
+    nav li {
+        margin-left: 20px;
+    }
+    .contact-link {
+        margin-right: 90px;
+    }
+}
+@media (max-width: 400px) {
+   nav ul {
+    width: 30%;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+.projects .project {
+    width: 100%;
+}
+#contact i {
+    padding: 20px;
+    font-size: 2em;
+}
